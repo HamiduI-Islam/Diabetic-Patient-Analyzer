@@ -24,7 +24,4 @@ class Patient:
             return "Non-Diabetic"
 
     def __str__(self):
-        """
-        Provides a clean, readable string format for the UI listboxes.
-        """
         return f"ID: {self.patient_id} | Age: {self.age} | Diagnosis: {self.get_diagnosis_label()}"

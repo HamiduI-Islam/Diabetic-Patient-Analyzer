@@ -16,7 +16,7 @@ class DataManager:
         patient_database = {}  # Dictionary for fast Admin ID lookups
         active_ids = set()     # Set to strictly audit and prevent duplicate entries
 
-        # Exception Handling: Catch missing file errors gracefully
+        # Exception Handling: Catch missing file errors 
         if not os.path.exists(self.filepath):
             print(f"Admin Alert: '{self.filepath}' not found. Initializing a new database.")
             return patient_database, active_ids
